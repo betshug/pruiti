@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Flask App</title>
+    <title>Freelance Data Visualization Expert</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Inline style for setting background image */
+        body {
+            background-image: url("{{ url_for('static', filename='background.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- Main Content Section -->
     <div class="content">
-        <h1>Ciao piccolettaaaaa!</h1>
-        <p>TI AMO tantoooo :*.</p>
+        <h1>About Me</h1>
+        <p>
+            Hi, I'm a freelance expert in <strong>data visualization</strong> and analytics, with experience turning raw data into insightful and engaging visual stories. 
+            My skills include using tools like Python, Pandas, Matplotlib, Seaborn, and D3.js for interactive data dashboards, reports, and business insights.
+        </p>
+        <p>
+            I also specialize in data analysis, business intelligence, and dashboard creation using platforms such as Tableau and Power BI. Whether it's building complex 
+            reports or simplifying datasets, I can help organizations make data-driven decisions with confidence.
+        </p>
+        <p>
+            If you're looking to make sense of your data and turn it into actionable insights, I'd love to help you!
+        </p>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Marco Pruiti | Freelance Data Visualization Expert</p>
+    </footer>
 </body>
 </html>
