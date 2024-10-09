@@ -42,8 +42,8 @@ body {
 }
 
 .profile-picture img {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;  /* Circular profile picture */
     border: 5px solid white;
     object-fit: cover;
