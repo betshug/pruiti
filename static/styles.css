@@ -42,8 +42,8 @@ body {
 }
 
 .profile-picture {
-    width: 300px; /* Set a fixed width for the picture container */
-    height: 300px; /* Set a fixed height for the picture container */
+    width: 280px; /* Set a fixed width for the picture container */
+    height: 280px; /* Set a fixed height for the picture container */
     overflow: hidden; /* Hide overflow for proper circular cropping */
     border-radius: 50%; /* Circular shape */
     border: 5px solid white; /* White border */
@@ -55,8 +55,9 @@ body {
 
 .profile-picture img {
     width: 100%; /* Make the image take up the full container width */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Make the image take up the full container height */
     object-fit: cover; /* Ensure the image covers the container properly */
+    object-position: center top; /* Align the image to the top */
 }
 
 .about-me {
