@@ -90,3 +90,23 @@ body {
     color: white;
     font-size: 0.9rem;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 930px) {
+    .profile-container {
+        flex-direction: column; /* Stack profile picture on top of about me section */
+        text-align: center; /* Center the content */
+    }
+
+    .profile-picture {
+        width: 45%; /* Set a fixed width for the picture container */
+        height: 45%; /* Set a fixed height for the picture container */
+        margin-right: 0; /* Remove the right margin */
+        margin-bottom: 20px; /* Add some spacing between picture and text */
+    }
+
+    .about-me {
+        text-align: center; /* Center the about me text on smaller screens */
+        background-color: black;
+    }
+}
