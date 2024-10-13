@@ -6,5 +6,10 @@ app = Flask(__name__)
 def home():
     return render_template('homepage.html')
 
+
+@app.route('/portfolio')
+def portfolio():
+    return "sucuni"
+
 if __name__ == "__main__":
     app.run(debug=True)
